@@ -102,6 +102,8 @@ copyToClipboardBtn.addEventListener("click", function () {
         .catch((err) => {
           console.log("An error occure, please try again");
         });
+    } else {
+      alert("Your browser does not support clipboard access...\u{1F606}");
     }
   });
 });
