@@ -32,8 +32,8 @@ const toggleSwitch = function (switchContainer) {
   switchContainer.classList.toggle("open");
 };
 
-//* function that generate password, called immediately the DOM is loaded
-const generatePassword = (function () {
+//* function that generate password
+const generatePassword = function () {
   //* convert the password length to a number
   const length = Number(passwordStrength.passwordLength);
 
@@ -70,7 +70,7 @@ const generatePassword = (function () {
   }
 
   displayPassword.textContent = password;
-})();
+};
 
 //* Add Event Listener call
 //* 1: an event listener that is been called when the switch is clicked
@@ -107,3 +107,6 @@ copyToClipboardBtn.addEventListener("click", function () {
 });
 
 //* end of event listener
+
+//*  generate password once the DOM is loaded
+generatePassword();
