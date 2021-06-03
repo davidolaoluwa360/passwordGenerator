@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body .text-center {
+  text-align: center;
+}
+
+body .bolder {
+  font-weight: bolder;
+}
+
+body .is-dark {
+  color: #3e496e;
+}
+
+body .btn {
+  background-color: #3757ee;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+body .btn:hover {
+  background-color: #3549ad;
+}
+
+body .open {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+
+body .container {
+  background-color: #b4c5dd;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+body .container .ps-centered {
+  background-color: #040f2d;
+  min-width: 45%;
+  min-height: 70%;
+  border-radius: 7px;
+  padding: 1.9rem;
+  -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 450px) {
+  body .container .ps-centered {
+    padding: 0.8rem;
+    width: 97%;
+  }
+}
+
+body .container .ps-centered .ps-heading {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+body .container .ps-centered .ps-content label {
+  font-size: 0.8rem;
+}
+
+body .container .ps-centered .ps-content .ps-content-box {
+  background-color: #091642;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 6px;
+}
+
+body .container .ps-centered .ps-content .content-box-space {
+  margin-top: 1.2rem;
+}
+
+body .container .ps-centered .ps-content .ps-length-wrapper .ps-length {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .ps-centered .ps-content .ps-length-wrapper .ps-length .ps-length-right {
+  margin-left: auto;
+  margin-right: 0.3rem;
+}
+
+@media screen and (max-width: 250px) {
+  body .container .ps-centered .ps-content .ps-length-wrapper .ps-length .ps-length-right {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+body .container .ps-centered .ps-content .ps-display-container .ps-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 450px) {
+  body .container .ps-centered .ps-content .ps-display-container .ps-display {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body .container .ps-centered .ps-content .ps-display-container .ps-display .ps-display-left {
+    width: 100%;
+  }
+}
+
+body .container .ps-centered .ps-content .ps-display-container .ps-display .ps-display-right {
+  margin-left: auto;
+}
+
+body .container .ps-centered .ps-content .ps-display-container .ps-display .ps-display-right .ps-display-button {
+  margin-left: 0.3rem;
+}
+
+@media screen and (max-width: 450px) {
+  body .container .ps-centered .ps-content .ps-display-container .ps-display .ps-display-right {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 0.2rem;
+  }
+  body .container .ps-centered .ps-content .ps-display-container .ps-display .ps-display-right .ps-display-button {
+    margin-left: 0;
+  }
+}
+
+body .container .ps-centered .ps-content .ps-settings-wrapper .ps-settings-box {
+  margin-top: 0.4rem;
+}
+
+body .container .ps-centered .ps-content .ps-settings-wrapper .box-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .container .ps-centered .ps-content .ps-settings-wrapper .box-flex .box-right {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 250px) {
+  body .container .ps-centered .ps-content .ps-settings-wrapper .box-flex .box-right {
+    margin-left: 0;
+  }
+}
+
+body .container .ps-centered .ps-content .ps-settings-wrapper .ps-toggle-wrapper {
+  background-color: #3549ad;
+  width: 35px;
+  height: 20px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+body .container .ps-centered .ps-content .ps-settings-wrapper .ps-toggle-wrapper .ps-toggle-switch {
+  width: 10px;
+  height: 13px;
+  background-color: white;
+  border-radius: 90px;
+  padding: 0 0.4rem;
+}
+
+body .container .ps-footer button {
+  width: 100%;
+  margin-top: 0.8rem;
+  padding: 1rem;
+}
+/*# sourceMappingURL=main.css.map */

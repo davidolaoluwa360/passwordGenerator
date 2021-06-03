@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link
+      rel="stylesheet"
+      href="./public/css/main.css"
+      type="text/css"
+      media="screen"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="ps-centered">
+        <div class="ps-heading">
+          <p>GENERATE PASSWORD</p>
+        </div>
+        <div class="ps-content">
+          <div class="ps-display-container content-box-space">
+            <label class="bolder is-dark">Generate Password</label>
+            <div class="ps-display ps-content-box bolder">
+              <div class="ps-display-left">sdfdfsASDFWE345345</div>
+              <div class="ps-display-right">
+                <button class="ps-display-button bolder btn ps-copy">Copy</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="ps-length-wrapper content-box-space">
+            <label class="bolder is-dark">Length</label>
+            <div class="ps-length ps-content-box">
+              <div class="ps-length-left">
+                <input
+                  type="range"
+                  min="12"
+                  max="32"
+                  value="12"
+                  class="ps-range-input"
+                />
+              </div>
+
+              <div class="ps-length-right">
+                <p class="range-output">12</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ps-settings-wrapper content-box-space">
+            <label class="bolder is-dark">Settings</label>
+            <div class="ps-number ps-content-box box-flex">
+              <div class="ps-number-left">
+                <label>include numbers</label>
+              </div>
+              <div class="ps-number-right box-right">
+                <div class="ps-toggle-wrapper number-switch-container">
+                  <div class="ps-toggle-switch"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ps-letters ps-content-box ps-settings-box box-flex">
+              <div class="ps-letters-left">
+                <label>include letters</label>
+              </div>
+              <div class="ps-letters-right box-right">
+                <div class="ps-toggle-wrapper letter-switch-container open">
+                  <div class="ps-toggle-switch"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ps-symbols ps-content-box ps-settings-box box-flex">
+              <div class="ps-symbols-left">
+                <label>include symbols</label>
+              </div>
+              <div class="ps-symbols-right box-right">
+                <div class="ps-toggle-wrapper symbol-switch-container">
+                  <div class="ps-toggle-switch"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ps-footer">
+          <button class="ps-btn btn" type="button">Generate Password</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./public/js/index.js"></script>
+</html>
