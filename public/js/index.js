@@ -92,20 +92,25 @@ generatePasswordBtn.addEventListener("click", generatePassword);
 
 //* 4: an event listener that listen to the click event and add the generated password to the clipboard
 copyToClipboardBtn.addEventListener("click", function () {
-  navigator.permissions.query({ name: "clipboard-write" }).then((result) => {
-    if (result.state == "granted" || result.state == "prompt") {
-      navigator.clipboard
-        .writeText(displayPassword.textContent)
-        .then((result) => {
-          alert("password successfully copied to the clipboard");
-        })
-        .catch((err) => {
-          console.log("An error occure, please try again");
-        });
-    } else {
-      alert("Your browser does not support clipboard access...\u{1F606}");
-    }
-  });
+  navigator.permissions
+    .query({ name: "clipboard-write" })
+    .then((result) => {
+      if (result.state == "granted" || result.state == "prompt") {
+        navigator.clipboard
+          .writeText(displayPassword.textContent)
+          .then((result) => {
+            alert("password successfully copied to the clipboard");
+          })
+          .catch((err) => {
+            console.log("An error occure, please try again");
+          });
+      } else {
+        alert("Your browser does not support clipboard access...\u{1F606}");
+      }
+    })
+    .catch((e) => {
+      alert("Permission Fail: Your browser do not support copying");
+    });
 });
 
 //* end of event listener
